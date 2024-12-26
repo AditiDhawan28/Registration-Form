@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Select from 'react-select';
 import axios from "axios";
 // import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+// import "react-datepicker/dist/react-datepicker.css";
 
 const SignUp = () => {
 
