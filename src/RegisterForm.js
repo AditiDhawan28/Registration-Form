@@ -4,7 +4,7 @@ import './RegisterForm.css'
 import { Link, useNavigate } from "react-router-dom";
 import Select from 'react-select';
 import axios from "axios";
-import DatePicker from "react-datepicker";
+// import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 const SignUp = () => {
@@ -18,7 +18,7 @@ const SignUp = () => {
     email: "",
     gender: "",
     age: "",
-    dob:null,
+    // dob:null,
     profession:"",
     skills:[],
     languages:[],
@@ -32,9 +32,9 @@ const SignUp = () => {
     setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleDateChange = (date) => {
-    setValues((prev) => ({ ...prev, dob: date }));
-  };
+  // const handleDateChange = (date) => {
+  //   setValues((prev) => ({ ...prev, dob: date }));
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault(); //prevent the default submission
@@ -120,7 +120,7 @@ const SignUp = () => {
             <input  type="checkbox" value="english" name="languages"  onChange={handleLanguageChange}/>English
             <input  type="checkbox" value="french" name="languages"  onChange={handleLanguageChange}/>French
       
-
+{/* 
 
           <label htmlFor="dob" name="dob">Date of Birth:</label>
             <DatePicker  
@@ -129,7 +129,7 @@ const SignUp = () => {
           showYearDropdown
           scrollableYearDropdown
           yearDropdownItemNumber={100}
-          placeholderText="YYYY-MM-DD" selected={values.dob} onChange={handleDateChange} />
+          placeholderText="YYYY-MM-DD" selected={values.dob} onChange={handleDateChange} /> */}
    
             <label htmlFor="profession">Profession :</label>
             <select id="profession" name="profession" onChange={(e)=>handleInput(e)}>
